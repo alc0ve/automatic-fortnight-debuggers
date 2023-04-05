@@ -1,4 +1,4 @@
-header, .project:not(:last-child) {
+/* header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
@@ -21,4 +21,38 @@ header, .project:not(:last-child) {
   color: #056605;
   font-weight: bold;
   margin-left: -5px;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-top: 50px;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #666;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+button {
+  background-color: #c19cef;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+button:hover {
+  background-color: #0062cc;
 }
