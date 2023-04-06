@@ -53,6 +53,7 @@ button {
   border: none;
   cursor: pointer;
   margin-top: 350px;
+  display: flex
 }
 
 button:hover {
