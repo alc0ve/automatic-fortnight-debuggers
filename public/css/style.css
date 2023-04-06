@@ -26,25 +26,25 @@
   background-color: #e8e8e8;
 }
 
-body {
+.landBody {
   font-family: Arial, sans-serif;
   text-align: center;
 }
 
-h1 {
+.landH1 {
   font-size: 3rem;
   color: #333;
   margin-top: 50px;
 }
 
-p {
+.landP {
   font-size: 1.5rem;
   color: #666;
   margin: 20px 175px 20px 175px;
   line-height: 1.5;
 }
 
-button {
+.landButt {
   background-color: #c19cef;
   color: #fff;
   font-size: 2rem;
@@ -55,17 +55,17 @@ button {
   margin-top: 350px;
 }
 
-button:hover {
+.landButt:hover {
   background-color: #0062cc;
 }
 
 @media screen and (max-width: 900px) {
-  p {
+   .landP {
    margin: 20px 50px 20px 50px
   }
 }
 @media screen and (max-width: 600px) {
-  button {
+  .landButt {
     margin-top: 100px;
   }
 }
