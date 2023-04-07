@@ -1,11 +1,11 @@
 const router = require('express').Router();
-const { Project, User } = require('../models');
+const { Idea, User } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
-    const projectData = await Project.findAll({
+    const projectData = await Idea.findAll({
       include: [
         {
           model: User,
@@ -15,11 +15,11 @@ router.get('/', async (req, res) => {
     });
 
     // Serialize data so the template can read it
-    const projects = projectData.map((project) => project.get({ plain: true }));
+    const ideas = projectData.map((project) => project.get({ plain: true }));
 
     // Pass serialized data and session flag into template
     res.render('homepage', { 
-      projects, 
+      ideas, 
       logged_in: req.session.logged_in 
     });
   } catch (err) {
@@ -27,9 +27,9 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/project/:id', async (req, res) => {
+router.get('/Idea/:id', async (req, res) => {
   try {
-    const projectData = await Project.findByPk(req.params.id, {
+    const ideaData = await Idea.findByPk(req.params.id, {
       include: [
         {
           model: User,
@@ -38,10 +38,10 @@ router.get('/project/:id', async (req, res) => {
       ],
     });
 
-    const project = projectData.get({ plain: true });
+    const data = ideaData.get({ plain: true });
 
-    res.render('project', {
-      ...project,
+    res.render('idea', {
+      ...data,
       logged_in: req.session.logged_in
     });
   } catch (err) {
@@ -55,7 +55,7 @@ router.get('/profile', withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Project }],
+      include: [{ model: Idea }],
     });
 
     const user = userData.get({ plain: true });
