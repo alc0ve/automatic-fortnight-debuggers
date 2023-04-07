@@ -82,7 +82,16 @@
 }
 
 .ml1 .line1 { top: 0; }
+
 .ml1 .line2 { bottom: 0; }
+
+.homeButt {
+
+}
+
+.mdlBtn {
+
+}
 
 @media screen and (max-width: 900px) {
    .landP {
