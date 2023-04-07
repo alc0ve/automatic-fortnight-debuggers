@@ -31,12 +31,6 @@
   text-align: center;
 }
 
-.landH1 {
-  font-size: 3rem;
-  color: #333;
-  margin-top: 50px;
-}
-
 .landP {
   font-size: 1.5rem;
   color: #666;
@@ -88,7 +82,16 @@
 }
 
 .ml1 .line1 { top: 0; }
+
 .ml1 .line2 { bottom: 0; }
+
+.homeButt {
+
+}
+
+.mdlBtn {
+
+}
 
 @media screen and (max-width: 900px) {
    .landP {
