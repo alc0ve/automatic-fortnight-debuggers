@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fund My Project!</title>
+  <title>Welcome to the Application Generator!</title>
   <link rel="stylesheet" href="/css/jass.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -12,10 +12,19 @@
 <body>
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        <span role="img" aria-label="money">💸</span>
-        <a href="/">Fund My Project!</a>
-      </h1>
+      <h1 class="landH1">Ideation</h1>
+      <h1 class="landH1">Welcome to the Application Generator!</h1>
+	<p class="landP">Ideation is the creative process of generating, developing, 
+		and communicating new ideas. Whether you're stuck from 
+		brainstorming, need and app idea for bootcamp projects, or just for fun
+		this app is designed to generate an application tailored to your needs 
+		with just a few clicks.</p>
+	<button class="landButt">Get started</button>
+
+      
+        {{!-- <span role="img" aria-label="money">💸</span>
+        <a href="/">Fund My Project!</a> --}}
+      
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
