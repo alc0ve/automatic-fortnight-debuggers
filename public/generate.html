@@ -1,0 +1,31 @@
+<div class="ideas-row">
+    <div class="col-Btn">
+        <button class="saveBtn">Saved Ideas</button>
+        <button class="ideaBtn">Previously Generated Ideas</button>
+    </div>
+    <div class="top-Button">
+        <form class="form new-project">
+            <div class="form-group">
+              <input class="form-input" type="text" id="project-name" name="project-name" />
+            </div>
+        </form>
+    </div>
+    <div class="form-Btn"> 
+        <button type="submit" class="newIdea">Generate New Idea</button>
+        <button type="submit" class="post-Btn">Post an Idea</button>
+    </div>
+    <div class="buzBtn">
+        <button class="home">Home</button>
+        <button class="logOut">Logout</button>
+    </div>
+  </div>
+
+  <nav>
+    <!-- Conditionally render login or logout links -->
+    {{#if logged_in}}
+    <a href="/profile">profile</a> |
+    <button class="no-button" id="logout">logout</button>
+    {{else}}
+    <a href="/login">login</a>
+    {{/if}}
+  </nav>
