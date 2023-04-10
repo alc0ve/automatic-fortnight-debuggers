@@ -25,7 +25,7 @@ const descriptions = [
     'Attending movies',
     'Dog owners',
     'Wedding planners',
-    'Sports starts',
+    'Sports stars',
     'Watching sports',
     'Firemen',
     'Scientists',
