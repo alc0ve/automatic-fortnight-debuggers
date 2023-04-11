@@ -67,11 +67,20 @@ generateButton.addEventListener('click', () => {
 
 const saveIdea = document.getElementById('saveIdea')
 saveIdea.addEventListener('click', async () => {
+    const description = document.getElementById('project-name').value
     const response = await fetch('/api/ideas/', {
         method: 'POST',
-        body: JSON.stringify({ description: 'Twitter for Farmers' }),
+        body: JSON.stringify({ description }),
         headers: { 'Content-Type': 'application/json' },
         
       });
       console.log(response)
+})
+
+const saveBtn = document.getElementById('save-btn')
+saveBtn.addEventListener('click', async () =>{
+    const response = await fetch('/api/ideas', {
+        method: "GET"
+    })
+    console.log("got ideas", response)
 })

@@ -18,6 +18,21 @@ router.post("/", async (req, res) => {
   }
 });
 
+router.get("/", withAuth, async (req, res) => {
+  try {
+    const ideaDatata = await Idea.findAll({
+      where: {
+        user_id: req.session.user_id,
+      },
+    });
+
+    const ideas = ideaData.map((idea) => idea.get({ plain: true }));
+    res.status(200).json(ideas);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+})
+
 router.delete("/:id", withAuth, async (req, res) => {
   try {
     const ideaData = await Idea.destroy({
