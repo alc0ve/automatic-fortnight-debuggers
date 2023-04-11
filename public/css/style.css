@@ -31,6 +31,15 @@
   background-color: #0062cc;
 }
 
+#generatedIdea {
+  background-color: aliceblue;
+  min-height: 100px;
+  min-width: 400px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: x-large;
+}
+
 .ml1 {
   font-weight: 900;
   font-size: 3.5em;
