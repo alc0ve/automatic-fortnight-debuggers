@@ -18,10 +18,14 @@ router.get("/", async (req, res) => {
     const ideas = ideaData.map((idea) => idea.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render("homepage", {
-      ideas,
-      logged_in: req.session.logged_in,
-    });
+    if (req.session.logged_in) {
+      res.render("homepage", {
+        ideas,
+        logged_in: req.session.logged_in,
+      });
+    } else {
+      res.render("landingpage");
+    }
   } catch (err) {
     res.status(500).json(err);
   }

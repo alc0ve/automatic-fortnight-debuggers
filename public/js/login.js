@@ -5,6 +5,7 @@ const loginFormHandler = async (event) => {
   const email = document.querySelector('#email-login').value.trim();
   const password = document.querySelector('#password-login').value.trim();
 
+  //todo: logging in takes you to a profile page that doesn't exist. Are we going to create a profile page? -cam
   if (email && password) {
     // Send a POST request to the API endpoint
     const response = await fetch('/api/users/login', {

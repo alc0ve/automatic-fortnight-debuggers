@@ -2,11 +2,14 @@ const router = require("express").Router();
 const { Idea } = require("../../models");
 const withAuth = require("../../utils/auth");
 
-router.post("/", withAuth, async (req, res) => {
+//deleted withAuth from router.post function in order to be able to use api without logging in. 
+router.post("/", async (req, res) => {
+  console.log('post', req.body, req.session)
   try {
     const newIdea = await Idea.create({
       ...req.body,
-      user_id: req.session.user_id,
+      // user_id: req.session.user_id,
+      user_id: 3
     });
 
     res.status(200).json(newIdea);
@@ -14,6 +17,21 @@ router.post("/", withAuth, async (req, res) => {
     res.status(400).json(err);
   }
 });
+
+router.get("/", withAuth, async (req, res) => {
+  try {
+    const ideaDatata = await Idea.findAll({
+      where: {
+        user_id: req.session.user_id,
+      },
+    });
+
+    const ideas = ideaData.map((idea) => idea.get({ plain: true }));
+    res.status(200).json(ideas);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+})
 
 router.delete("/:id", withAuth, async (req, res) => {
   try {
