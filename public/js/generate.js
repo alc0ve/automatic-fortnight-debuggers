@@ -1,46 +1,45 @@
 console.log("test");
 const apps = [
-  "Red Dead Redemption",
-  "Uber",
-  "Tinder",
-  "Craigslist",
-  "Twitter",
-  "To do list",
-  "Calculator",
-  "News app",
-  "Vine",
-  "Foursquare",
-  "Video editing app",
-  "Spotify",
-  "Pinterest",
-  "Keyboard",
-];
 
+    'Youtube',
+    'TikTok',
+    'Uber',
+    'Twitter',
+    'Instagram',
+    'Facebook',
+    'To-do list',
+    'News app',
+    'Spotify',
+    'Pinterest',
+    'Snapchat',
+    'Dating app',
+    'WhatsApp',
+    'Blog',
+    'Search engine',
+    'Maps',
+    'Airbnb',
+    'Instacart'
+    
+    ]
+    
 const descriptions = [
-  "Swimmers",
-  "Construction workers",
-  "Wrestlers",
-  "Programmers",
-  "Dogs",
-  "Attending movies",
-  "Dog owners",
-  "Wedding planners",
-  "Sports stars",
-  "Watching sports",
-  "Firemen",
-  "Scientists",
-  "Debt collectors",
-  "Movers",
-  "Moving furniture",
-  "Shoeshopping",
-  "Bird watching",
-  "Attending weddings",
-  "Musicians",
-  "Mechanics",
-  "Dog walkers",
-  "foodies",
-];
-
+    'Programmers',
+    'Dogs',
+    'Dancers',
+    'Dog owners',
+    'Wedding planners',
+    'Athletes',
+    'Teachers',
+    'Doctors',
+    'Scientists',
+    'the elderly',
+    'Social workers',
+    'Musicians',
+    'Mechanics',
+    'Foodies',
+    'Influencers'
+    ]
+    
 const generateButton = document.getElementById("generateButton");
 console.log(generateButton);
 generateButton.addEventListener("click", () => {
