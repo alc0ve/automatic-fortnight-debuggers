@@ -1,5 +1,6 @@
-console.log('test')
+console.log("test");
 const apps = [
+
     'Youtube',
     'TikTok',
     'Uber',
@@ -38,14 +39,13 @@ const descriptions = [
     'Foodies',
     'Influencers'
     ]
+    
+const generateButton = document.getElementById("generateButton");
+console.log(generateButton);
+generateButton.addEventListener("click", () => {
+  // program to get a random item from an array
 
-const generateButton = document.getElementById('generateButton')
-console.log(generateButton)
-generateButton.addEventListener('click', () => {
-    // program to get a random item from an array
-
-    function getRandomItem(arr) {
-
+  function getRandomItem(arr) {
     // get random index value
     const randomIndex = Math.floor(Math.random() * arr.length);
 
@@ -53,32 +53,31 @@ generateButton.addEventListener('click', () => {
     const item = arr[randomIndex];
 
     return item;
-}
-    const randomApp = getRandomItem(apps);
-    console.log(randomApp)
-    const randomDescription = getRandomItem(descriptions);
-    console.log(randomDescription)
-    const message = `The ${randomApp} for ${randomDescription}`
-    const generatedIdea = document.getElementById('generatedIdea')
-    generatedIdea.innerText = message
-})
+  }
+  const randomApp = getRandomItem(apps);
+  console.log(randomApp);
+  const randomDescription = getRandomItem(descriptions);
+  console.log(randomDescription);
+  const message = `The ${randomApp} for ${randomDescription}`;
+  const generatedIdea = document.getElementById("generatedIdea");
+  generatedIdea.innerText = message;
+});
 
-const saveIdea = document.getElementById('saveIdea')
-saveIdea.addEventListener('click', async () => {
-    const description = document.getElementById('project-name').value
-    const response = await fetch('/api/ideas/', {
-        method: 'POST',
-        body: JSON.stringify({ description }),
-        headers: { 'Content-Type': 'application/json' },
-        
-      });
-      console.log(response)
-})
+const saveIdea = document.getElementById("saveIdea");
+saveIdea.addEventListener("click", async () => {
+  const description = document.getElementById("generatedIdea").value;
+  const response = await fetch("/api/ideas/", {
+    method: "POST",
+    body: JSON.stringify({ description }),
+    headers: { "Content-Type": "application/json" },
+  });
+  console.log(response);
+});
 
-const saveBtn = document.getElementById('save-btn')
-saveBtn.addEventListener('click', async () =>{
-    const response = await fetch('/api/ideas', {
-        method: "GET"
-    })
-    console.log("got ideas", response)
-})
+const saveBtn = document.getElementById("saveIdea");
+saveBtn.addEventListener("click", async () => {
+  const response = await fetch("/api/ideas", {
+    method: "GET",
+  });
+  console.log("got ideas", response);
+});

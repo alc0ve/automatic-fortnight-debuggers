@@ -6,7 +6,16 @@
 
 <div class="row mt-4">
   <div class="col-md-6">
+    <h3>Generated Idea:</h3>
+
+        <div id="generatedIdea"></div>
+
     <h3>Create a New Idea:</h3>
+
+            <div class="form-Btn"> 
+            <button type="submit" class="btn btn-primary newIdea" id="generateButton">Generate New Idea</button>
+            <button type="submit" class="btn btn-success" id="saveIdea">Save Idea</button>
+        </div>
 
     <form class="form new-idea-form">
       <div class="form-group">
@@ -27,6 +36,7 @@
     <div class="row mb-2">
       <div class="col-md-8">
         <h4><a href="/idea/{{idea.id}}">{{idea.description}}</a></h4>
+        {{!-- <h4 ></h4> --}}
       </div>
       <div class="col-md-4">
         <button class="btn btn-sm btn-danger" data-id="{{idea.id}}">DELETE</button>
