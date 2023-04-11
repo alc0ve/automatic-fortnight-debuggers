@@ -8,6 +8,7 @@ User.hasMany(Idea, {
 
 Idea.belongsTo(User, {
   foreignKey: "user_id",
+  onDelete: "CASCADE",
 });
 
 module.exports = { User, Idea };
