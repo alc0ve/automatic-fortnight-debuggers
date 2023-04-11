@@ -1,28 +1,6 @@
-/* header, .project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
-}
-
-.no-button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  color: #1b89bc;
-  text-decoration: none;
-  font-size: 100%;
-}
-
-.no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
-}
-
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
-} */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   background-color: #e8e8e8;
 }
 
@@ -81,21 +59,25 @@
   transform-origin: 0 0;
 }
 
-.ml1 .line1 { top: 0; }
+.ml1 .line1 {
+  top: 0;
+}
 
-.ml1 .line2 { bottom: 0; }
+.ml1 .line2 {
+  bottom: 0;
+}
 
-.homeButt {
+/* .homeButt {
 
 }
 
 .mdlBtn {
 
-}
+} */
 
 @media screen and (max-width: 900px) {
-   .landP {
-   margin: 20px 50px 20px 50px
+  .landP {
+    margin: 20px 50px 20px 50px;
   }
 }
 @media screen and (max-width: 600px) {
