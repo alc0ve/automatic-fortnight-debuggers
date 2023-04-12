@@ -4,20 +4,18 @@
 
 ## Description
 
-This project aims to assist those struggling to develop app ideas and provide some inspiration. This app allows programmers or anyone looking to build an app to create, generate, save, and delete new app ideas.
+This project aims to assist those struggling to develop app ideas and provides some inspiration. This app allows programmers or anyone looking to build an app to create, generate, save, and delete new app ideas. You can also view ideas that other users have posted.
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Deployment](#deployment)
-- [Features](#features)
 - [Technologies](#technologies)
 - [License](#license)
 - [Tests](#tests)
 - [Credits](#credits)
 - [Contribution](#how-to-contribute)
-- [Contact / Questions](#contact--questions)
 
 ## Installation
 
@@ -30,12 +28,8 @@ No installation required -- this is a web-based application
 3. Once the repository is cloned, create a .env file with your database name, username, and MySQL password
 4. Type 'mysql -u root -p' into your terminal and enter in your password
 5. Source the schema file by typing 'SOURCE db/schema.sql' into the terminal
-6. 'NPM run seed'
-7. 'NPM start' to start up the server
-
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+6. 'npm run seed'
+7. 'npm start' to start up the server
 
 ## Deployment
 
@@ -43,34 +37,25 @@ Live URL: <a href="https://ideation-app-generator.herokuapp.com/">Deployment Lin
 
 <!-- in the parentheses is just the relative path to the screenshot-->
 
-![alt text](assets/images/Ideation%20Landing%20Page.png)
-
-## Features
-
-If your project has a lot of features, list them here.
+![alt text](assets/images/)
 
 ## Technologies
 
-JavaScript, HTML, CSS, Node.js, Express.js, MySQL
+JavaScript, HTML, CSS, Node.js, Express.js, MySQL, Sequelize, Handlebars
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
 [![License:MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This project is licensed under the MIT license. For more information about this license and what it entails visit: https://opensource.org/licenses/MIT
+Copyright <2023> <Ideation>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 This project is licensed under the MIT license. For more information about this license and what it entails, visit the MIT website <a href="https://opensource.org/licenses/MIT">here</a>
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
--- Badges
-
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-
-Badges aren't necessary, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
 
 ## Tests
 
@@ -88,9 +73,4 @@ None.
 
 ## How to Contribute
 
-If you created an application or package and would like other developers to contribute to it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Contact / Questions
-
-If you liked this project and want to see more, feel free to check out my other repos [here](https://github.com/alc0ve).  
- For any questions or inquiries, you can reach me at cmcclai26@gmail.com for further information.
+If you would like to contribute to this project please contact either one of us via the GitHub links above. Please refer to the [Contributor Covenant](https://www.contributor-covenant.org/) as an industry standard.
