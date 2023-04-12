@@ -3,13 +3,14 @@ const { Idea } = require("../../models");
 const withAuth = require("../../utils/auth");
 
 //deleted withAuth from router.post function in order to be able to use api without logging in.
-router.post("/", async (req, res) => {
+//added withAuth back in so that new users can use
+router.post("/", withAuth, async (req, res) => {
   console.log("post", req.body, req.session);
   try {
     const newIdea = await Idea.create({
       ...req.body,
-      // user_id: req.session.user_id,
-      user_id: 3,
+      user_id: req.session.user_id,
+      // user_id: 3,
     });
 
     res.status(200).json(newIdea);
