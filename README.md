@@ -25,9 +25,15 @@ No installation required -- this is a web-based application
 
 ## Usage (Instructions/How-To Use)
 
-1.  Clone this repository using the HTTPS, SSH, or GitHub CLI link with the git clone command in your terminal
+1. Clone this repository using the git clone command in your terminal
+2. You will clone one of the following links: HTTPS, SSH, or GitHub CLI
+3. Once the repository is cloned, create a .env file with your database name, username, and MySQL password
+4. Type 'mysql -u root -p' into your terminal and enter in your password
+5. Source the schema file by typing 'SOURCE db/schema.sql' into the terminal
+6. 'NPM run seed'
+7. 'NPM start' to start up the server
 
-2.  Provide instructions and examples for use. Include screenshots as needed.
+Provide instructions and examples for use. Include screenshots as needed.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
@@ -37,7 +43,7 @@ Live URL: <a href="https://ideation-app-generator.herokuapp.com/">Deployment Lin
 
 <!-- in the parentheses is just the relative path to the screenshot-->
 
-![alt text](assets/images/screenshot.png)
+![alt text](assets/images/Ideation%20Landing%20Page.png)
 
 ## Features
 
