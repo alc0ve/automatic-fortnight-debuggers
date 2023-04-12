@@ -37,7 +37,13 @@ Live URL: <a href="https://ideation-app-generator.herokuapp.com/">Deployment Lin
 
 <!-- in the parentheses is just the relative path to the screenshot-->
 
-![alt text](assets/images/)
+![Landing Page](https://user-images.githubusercontent.com/118307685/231608443-62c84d72-ce6b-4534-8177-d60e217f806a.png)
+
+![Profile](https://user-images.githubusercontent.com/118307685/231608454-6024b259-3783-457c-8248-8e41bcee4602.png)
+
+![Log-in/Sign-Up](https://user-images.githubusercontent.com/118307685/231608473-c50c0fb5-64b2-46d1-8984-13a61b580bb7.png)
+
+![Posted-Ideas](https://user-images.githubusercontent.com/118307685/231608532-ee145fc5-01a3-40e0-aa60-0613672b632e.png)
 
 ## Technologies
 
